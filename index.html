@@ -17,7 +17,7 @@
 	<link rel="dns-prefetch" href="https://www.dabailuobo.com/">
 	<link rel="prefetch" href="https://www.dabailuobo.com/">
 	<meta name="description" content="花心大萝卜">
-	<link rel="icon" href="https://www.dabailuobo.com/assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://www.dabailuobo.com/assets/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="https://www.dabailuobo.com/assets/favicon.ico" type="image/x-icon">
 </head>
 
@@ -38,7 +38,8 @@
 							<li id="whole-second"><a href="https://vue.dabailuobo.com/" aria-label="Docs"><i
 										class="icon icon-PROFILE"></i><span data-translate="Docs">Docs</span></a></li>
 							<li id="half-first"><a href="mailto:1395404299@qq.com" aria-label="Email" target="_blank"><i
-										class="icon icon-youxiang"></i><span data-translate="Email">Email</span></a></li>
+										class="icon icon-youxiang"></i><span data-translate="Email">Email</span></a>
+							</li>
 							<li class="quarter" id="quarter-first"><a aria-label="WeChat"><i
 										class="icon icon-gongzhonghao"></i><img src="assets/gongzhonghao.jpg"
 										alt="WeChat" width="95" height="95"></a></li>
@@ -46,56 +47,38 @@
 									target="_blank" rel="noopener" aria-label="Github"><i
 										class="icon icon-github"></i><span data-translate="Github">Github</span></a>
 							</li>
-							<li class="quarter" id="quarter-third"><a href="https://blog.dabailuobo.com/about/" target="_blank"
-									rel="noopener" aria-label="About"><i class="icon icon-xiaolian"></i><span
-										data-translate="About">About</span></a></li>
-							<li class="quarter" id="quarter-fourth"><a href=" "
-									aria-label="More"><i class="icon icon-gengduo"></i></a></li>
+							<li class="quarter" id="quarter-third"><a href="https://blog.dabailuobo.com/about/"
+									target="_blank" rel="noopener" aria-label="About"><i
+										class="icon icon-xiaolian"></i><span data-translate="About">About</span></a>
+							</li>
+							<li class="quarter" id="quarter-fourth"><a href=" " aria-label="More"><i
+										class="icon icon-gengduo"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="assets/anime.js"></script>
 		<script>
-			window.$ = selector => document.querySelector(selector)
-			const getOriginalContent = selector => $(selector).getAttribute("original-content")
-			window.subtitle = getOriginalContent(".content-subtitle")
-			window.signature = getOriginalContent("#signature")
-			window.config = {
-				SIM_RESOLUTION: 128,
-				DYE_RESOLUTION: 1024,
-				CAPTURE_RESOLUTION: 512,
-				DENSITY_DISSIPATION: 1,
-				VELOCITY_DISSIPATION: 0.2,
-				PRESSURE: 0.8,
-				PRESSURE_ITERATIONS: 20,
-				CURL: 30,
-				SPLAT_RADIUS: 0.25,
-				SPLAT_FORCE: 6000,
-				SHADING: true,
-				COLORFUL: true,
-				COLOR_UPDATE_SPEED: 10,
-				PAUSED: false,
-				BACK_COLOR: {
-					r: 30,
-					g: 31,
-					b: 33
-				},
-				TRANSPARENT: false,
-				BLOOM: true,
-				BLOOM_ITERATIONS: 8,
-				BLOOM_RESOLUTION: 256,
-				BLOOM_INTENSITY: 0.4,
-				BLOOM_THRESHOLD: 0.8,
-				BLOOM_SOFT_KNEE: 0.7,
-				SUNRAYS: true,
-				SUNRAYS_RESOLUTION: 196,
-				SUNRAYS_WEIGHT: 1.0,
-			}
+			! function () {
+				if (window.console && window.console.log) {
+					console.log("\n %c 大白萝卜 %c https://www.dabailuobo.com \n",
+						"color:#FFFFFB;background:#ffa628;padding:5px 0;border-radius:.5rem 0 0 .5rem;",
+						"background: #efefef;padding:5px 0 5px;border-radius:0 .5rem .5rem 0;"), console.log(
+						`%c页面加载消耗了 ${(Math.round(100*performance.now())/100/1e3).toFixed(2)}s`,
+						"background: #fff;color: #333;text-shadow: 0 0 2px #eee, 0 0 3px #eee, 0 0 3px #eee, 0 0 2px #eee, 0 0 3px #eee;"
+						), localStorage.getItem("access") || localStorage.setItem("access", (new Date).getTime());
+					let e = new Date(parseInt(localStorage.getItem("access"))),
+						o = `${e.getFullYear()}年${e.getMonth()+1}月${e.getDate()}日`,
+						t = 0;
+					localStorage.getItem("hit") ? t = parseInt(localStorage.getItem("hit")) : localStorage.setItem("hit", 0),
+						localStorage.setItem("hit", ++t), console.log(`这是你自 ${o} 以来第 ${t} 次在本站打开控制台，你想知道什么秘密嘛~`);
+					const n = `https://i.loli.net/2020/08/03/CUISOxB2Yjky1eP.png`;
+					console.log("%c ", "\n  background:url(".concat(n,
+						") no-repeat center;\n  background-size:200px;\n  margin:5px 0;\n  padding:0 0 162px 200px;\n  border-radius:10px;\n  overflow:hidden;\n  "
+						))
+				}
+			}();
 		</script>
-		<script src="assets/main.js"></script>
-		<script src="assets/log.js"></script>
 	</main>
 </body>
 
